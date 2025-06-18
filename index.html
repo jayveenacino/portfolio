@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayvee Madriaga Nacino</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26f9289e25.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="img-crop">
+                <img class="header-img" src="assets/cover2.png" alt="Header Image">
+            </div>
+            <div class="profile">
+                <img class="profile-img" src="assets/Profile2.png" alt="Profile Picture">
+                <h1>Jayvee Madriaga Nacino
+                    <img class="verified" src="assets/verified.png" alt="Verified Badge">
+                </h1>
+                <p style="font-weight: 200;">console.log("Hey World");</p>
+                <div class="icon-group">
+                    <div class="icon-item">
+                        <i class="fa-brands fa-github-alt"></i>
+                        <p>jayveenacino</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>jayveemadriaganacino00@gmail.com</p>
+                    </div>
+
+                    <div class="icon-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Zambales, Philippines</p>
+                    </div>
+                </div>
+                <div class="cv-btn">
+                    </i><button> <i class="fa-solid fa-circle-down"></i> Download CV</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <nav class="profile-nav">
+                    <button onclick="showSection('post')" id="btn-post" class="active-tab">Post</button>
+                    <button onclick="showSection('highlights')" id="btn-highlights">Highlights</button>
+                    <button onclick="showSection('more')" id="btn-more">More</button>
+                </nav>
+
+                <div id="post" class="section active">
+                    <h1>Design Section</h1>
+                    <div class="artwork-grid">
+                        <div class="artwork-item">
+                            <img src="assets/post 1.png" alt="Artwork 1">
+                            <p class="art-title">Social Media Flyer</p>
+                        </div>
+                        <div class="artwork-item">
+                            <img src="assets/post2.png" alt="Artwork 2">
+                            <p class="art-title">Logo Design</p>
+                        </div>
+                        <div class="artwork-item">
+                            <img src="assets/post3.png" alt="Artwork 3">
+                            <p class="art-title">Brandings</p>
+                        </div>
+                        <div class="artwork-item">
+                            <img src="assets/post4.png" alt="Artwork 4">
+                            <p class="art-title">Mockup</p>
+                        </div>
+                        <div class="artwork-item">
+                            <img src="assets/post5.png" alt="Artwork 5">
+                            <p class="art-title">Minimal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="highlights" class="section">
+                    <h1>Software Section</h1>
+                    <div class="coding-grid">
+                        <div class="coding-item">
+                            <img src="assets/inventory.png" alt="Inventory System" class="code-img">
+                            <h3 class="code-title">Hanap Bayan</h3>
+                            <p class="code-description">A simple name tracker HTML, CSS & JS for finding names on
+                                COMELECT</p>
+                        </div>
+
+                        <div class="coding-item">
+                            <img src="assets/student-portal.png" alt="Student Portal" class="code-img">
+                            <h3 class="code-title">Student Portal</h3>
+                            <p class="code-description">Profile and grade management system using MongoDb & ReactJS.</p>
+                        </div>
+
+                        <div class="coding-item">
+                            <img src="assets/pos.png" alt="POS System" class="code-img">
+                            <h3 class="code-title">Photobooth System</h3>
+                            <p class="code-description">a photobooth system that can capture 3 pictures and save to
+                                device</p>
+                        </div>
+
+                        <div class="coding-item">
+                            <img src="assets/portfolio.png" alt="Personal Portfolio" class="code-img">
+                            <h3 class="code-title">Portfolio Website</h3>
+                            <p class="code-description">Responsive personal site to showcase my projects and media work.
+                            </p>
+                        </div>
+
+                        <div class="coding-item">
+                            <img src="assets/ecommerce.png" alt="E-Commerce Site" class="code-img">
+                            <h3 class="code-title">E-Commerce Site</h3>
+                            <p class="code-description">Online shop with shopping cart and product filter features.</p>
+                        </div>
+
+                        <!-- Modal -->
+                        <div id="codeModal" class="code-modal">
+                            <div class="code-modal-content">
+                                <span class="close-modal" onclick="closeModal()">&times;</span>
+                                <img id="modalImg" src="" alt="System Image" />
+                                <h2 id="modalTitle"></h2>
+                                <p id="modalDescription"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="more" class="section">
+                    <div class="info-email-wrapper">
+
+                        <div class="info-section minimal-card">
+                            <h2 class="section-title">About Me</h2>
+                            <p class="section-subtitle">Web Developer | Video & Photo Editor</p>
+
+                            <p class="about-intro">
+                                I’m Jayvee Nacino, a college student passionate about turning creative ideas into
+                                digital experiences.
+                                I enjoy building websites, editing media, and learning new tools that bring stories and
+                                designs to life.
+                                I may not be a full-time developer yet, but I'm constantly growing and exploring
+                                different areas of tech and design.
+                            </p>
+
+                            <ul class="info-list">
+                                <li><strong>Name:</strong> Jayvee Madriaga Nacino</li>
+                                <li><strong>Nationality:</strong> Filipino</li>
+                                <li><strong>Location:</strong> Subic, Zambales, Philippines</li>
+                                <li><strong>Languages:</strong> English, Filipino</li>
+                                <li><strong>Skills:</strong>
+                                    <div class="skill-icons">
+                                        <i class="fab fa-html5" title="HTML5"></i>
+                                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                                        <i class="fab fa-js" title="JavaScript"></i>
+                                        <i class="fab fa-github" title="GitHub"></i>
+                                        <i class="fas fa-database" title="MongoDB"></i>
+                                        <i class="fab fa-figma" title="Figma"></i>
+                                        <i class="fas fa-video" title="Premiere Pro"></i>
+                                        <i class="fas fa-image" title="Photoshop"></i>
+                                    </div>
+                                </li>
+                                <li><strong>Socials:</strong>
+                                    <a href="https://www.instagram.com/jyv.xyz/" target="_blank">Instagram</a> •
+                                    <a href="https://github.com/jayveenacino" target="_blank">GitHub</a> •
+                                    <a href="https://www.behance.net/jayveemadriaganacino" target="_blank">Behance</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="email-section minimal-card" style="text-align: center;">
+                            <h2 class="section-title">Contact Me</h2>
+                            <p class="section-subtitle">Got a project or collaboration in mind?</p>
+
+                            <img src="assets/ico.png" alt="Contact Image" style="width: 190px; margin-bottom: 20px;" />
+
+                            <p class="section-subtitle" style="font-size: 10px;">
+                                Email me at:
+                                <span id="email-text" class="copy-email" title="Copy email">
+                                    jayveemadriaganacino@gmail.com
+                                </span>
+                            </p>
+
+                            <p style="font-size: 10px; color: #555; margin-bottom: 16px; margin-top: -15px;">
+                                Or press the button below to open your email app.
+                            </p>
+
+                            <a href="mailto:jayveemadriaganacino@gmail.com" class="email-btn" target="_blank">
+                                <i class="fa-solid fa-paper-plane"></i> Send Me an Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="twitter-footer">
+            <p class="footer-copy">© 2025 Jayvee Nacino. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+
+            document.querySelectorAll('.profile-nav button').forEach(btn => btn.classList.remove('active-tab'));
+            document.getElementById('btn-' + sectionId).classList.add('active-tab');
+        }
+
+        const modal = document.getElementById("codeModal");
+        const modalImg = document.getElementById("modalImg");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+
+        document.querySelectorAll(".coding-item").forEach(item => {
+            item.addEventListener("click", () => {
+                modal.style.display = "flex";
+                modalImg.src = item.querySelector("img").src;
+                modalTitle.textContent = item.querySelector(".code-title").textContent;
+                modalDescription.textContent = item.querySelector(".code-description").textContent;
+                document.body.style.overflow = "hidden"; // pang disable ng scroll
+            });
+        });
+
+        function closeModal() {
+            modal.style.display = "none";
+            document.body.style.overflow = ""; // para mag scroll
+        }
+
+        window.addEventListener("click", function (e) {
+            if (e.target === modal) closeModal();
+        });
+
+
+        function sendMail(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const mailtoLink = `mailto:jayveemadriaganacino@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${name}%0D%0AEmail: ${email}`;
+
+            window.location.href = mailtoLink;
+        }
+
+        const emailSpan = document.getElementById("email-text");
+
+        emailSpan.addEventListener("click", () => {
+            const email = emailSpan.textContent;
+
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(email).then(() => {
+                    showCopied();
+                }).catch(() => {
+                    fallbackCopy(email);
+                });
+            } else {
+                fallbackCopy(email);
+            }
+        });
+
+        function fallbackCopy(text) {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            textarea.style.position = "fixed"; // para di gumalaw
+            document.body.appendChild(textarea);
+            textarea.focus();
+            textarea.select();
+
+            try {
+                document.execCommand("copy");
+                showCopied();
+            } catch (err) {
+                alert("Copy failed, please copy manually.");
+            }
+
+            document.body.removeChild(textarea);
+        }
+
+        function showCopied() {
+            const original = emailSpan.textContent;
+            emailSpan.textContent = "Copied!";
+            setTimeout(() => {
+                emailSpan.textContent = original;
+            }, 1500);
+        }
+
+    </script>
+
+</body>
+
+</html>
