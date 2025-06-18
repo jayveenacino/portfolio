@@ -209,6 +209,7 @@
             document.getElementById('btn-' + sectionId).classList.add('active-tab');
         }
 
+
         const modal = document.getElementById("codeModal");
         const modalImg = document.getElementById("modalImg");
         const modalTitle = document.getElementById("modalTitle");
@@ -216,17 +217,26 @@
 
         document.querySelectorAll(".coding-item").forEach(item => {
             item.addEventListener("click", () => {
-                modal.style.display = "flex";
                 modalImg.src = item.querySelector("img").src;
                 modalTitle.textContent = item.querySelector(".code-title").textContent;
                 modalDescription.textContent = item.querySelector(".code-description").textContent;
-                document.body.style.overflow = "hidden"; // pang disable ng scroll
+
+                modal.style.display = "flex"; // show modal container
+                setTimeout(() => {
+                    modal.classList.add("show"); // trigger animation
+                }, 10);
+
+                document.body.style.overflow = "hidden"; // disable scroll
+
             });
         });
 
         function closeModal() {
-            modal.style.display = "none";
-            document.body.style.overflow = ""; // para mag scroll
+            modal.classList.remove("show"); // animate out
+            setTimeout(() => {
+                modal.style.display = "none";
+                document.body.style.overflow = ""; // re-enable scroll
+            }, 300); // match animation duration
         }
 
         window.addEventListener("click", function (e) {
@@ -287,6 +297,7 @@
                 emailSpan.textContent = original;
             }, 1500);
         }
+
 
     </script>
 
