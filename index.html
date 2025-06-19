@@ -15,12 +15,15 @@
     <div class="wrapper">
         <div class="container">
             <div class="img-crop">
-                <img class="header-img" src="assets/cover2.png" alt="Header Image">
+                <img class="header-img" src="assets/cover2.png" alt="Undraggable Image"
+                    style="-webkit-user-drag: none;">
             </div>
             <div class="profile">
-                <img class="profile-img" src="assets/profile2.png" alt="Profile Picture">
+                <img class="profile-img" src="assets/profile2.png" alt="Undraggable Image"
+                    style="-webkit-user-drag: none;">
                 <h1>Jayvee Madriaga Nacino
-                    <img class="verified" src="assets/verified.png" alt="Verified Badge">
+                    <img class="verified" src="assets/verified.png" alt="Verified Badge"
+                        style="-webkit-user-drag: none;">
                 </h1>
                 <p style="font-weight: 200;">console.log("Hey World");</p>
                 <div class="icon-group">
@@ -46,32 +49,34 @@
 
             <div class="content">
                 <nav class="profile-nav">
-                    <button onclick="showSection('post')" id="btn-post" class="active-tab">Post</button>
-                    <button onclick="showSection('highlights')" id="btn-highlights">Highlights</button>
-                    <button onclick="showSection('more')" id="btn-more">More</button>
+                    <button class="tab-btn active-tab" onclick="showSection('post')" id="btn-post">Post</button>
+                    <button class="tab-btn" onclick="showSection('highlights')" id="btn-highlights">Highlights</button>
+                    <button class="tab-btn" onclick="showSection('more')" id="btn-more">More</button>
                 </nav>
+
+                <audio id="click-sound" src="assets/sound/mixkit-modern-technology-select-3124.wav" preload="auto"></audio>
 
                 <div id="post" class="section active">
                     <h1>Design Section</h1>
                     <div class="artwork-grid">
                         <div class="artwork-item">
-                            <img src="assets/post 1.png" alt="Artwork 1">
+                            <img src="assets/post 1.png" alt="Artwork 1" style="-webkit-user-drag: none;">
                             <p class="art-title">Social Media Flyer</p>
                         </div>
                         <div class="artwork-item">
-                            <img src="assets/post2.png" alt="Artwork 2">
+                            <img src="assets/post2.png" alt="Artwork 2" style="-webkit-user-drag: none;">
                             <p class="art-title">Logo Design</p>
                         </div>
                         <div class="artwork-item">
-                            <img src="assets/post3.png" alt="Artwork 3">
+                            <img src="assets/post3.png" alt="Artwork 3" style="-webkit-user-drag: none;">
                             <p class="art-title">Brandings</p>
                         </div>
                         <div class="artwork-item">
-                            <img src="assets/post4.png" alt="Artwork 4">
+                            <img src="assets/post4.png" alt="Artwork 4" style="-webkit-user-drag: none;">
                             <p class="art-title">Mockup</p>
                         </div>
                         <div class="artwork-item">
-                            <img src="assets/post5.png" alt="Artwork 5">
+                            <img src="assets/post5.png" alt="Artwork 5" style="-webkit-user-drag: none;">
                             <p class="art-title">Minimal</p>
                         </div>
                     </div>
@@ -81,34 +86,39 @@
                     <h1>Software Section</h1>
                     <div class="coding-grid">
                         <div class="coding-item">
-                            <img src="assets/inventory.png" alt="Inventory System" class="code-img">
+                            <img src="assets/inventory.png" alt="Inventory System" class="code-img"
+                                style="-webkit-user-drag: none;">
                             <h3 class="code-title">Hanap Bayan</h3>
                             <p class="code-description">A simple name tracker HTML, CSS & JS for finding names on
                                 COMELECT</p>
                         </div>
 
                         <div class="coding-item">
-                            <img src="assets/student-portal.png" alt="Student Portal" class="code-img">
+                            <img src="assets/student-portal.png" alt="Student Portal" class="code-img"
+                                style="-webkit-user-drag: none;">
                             <h3 class="code-title">Student Portal</h3>
                             <p class="code-description">Profile and grade management system using MongoDb & ReactJS.</p>
                         </div>
 
                         <div class="coding-item">
-                            <img src="assets/pos.png" alt="POS System" class="code-img">
+                            <img src="assets/pos.png" alt="POS System" class="code-img"
+                                style="-webkit-user-drag: none;">
                             <h3 class="code-title">Photobooth System</h3>
                             <p class="code-description">a photobooth system that can capture 3 pictures and save to
                                 device</p>
                         </div>
 
                         <div class="coding-item">
-                            <img src="assets/portfolio.png" alt="Personal Portfolio" class="code-img">
+                            <img src="assets/portfolio.png" alt="Personal Portfolio" class="code-img"
+                                style="-webkit-user-drag: none;">
                             <h3 class="code-title">Portfolio Website</h3>
                             <p class="code-description">Responsive personal site to showcase my projects and media work.
                             </p>
                         </div>
 
                         <div class="coding-item">
-                            <img src="assets/ecommerce.png" alt="E-Commerce Site" class="code-img">
+                            <img src="assets/ecommerce.png" alt="E-Commerce Site" class="code-img"
+                                style="-webkit-user-drag: none;">
                             <h3 class="code-title">E-Commerce Site</h3>
                             <p class="code-description">Online shop with shopping cart and product filter features.</p>
                         </div>
@@ -171,7 +181,8 @@
                             <h2 class="section-title">Contact Me</h2>
                             <p class="section-subtitle">Got a project or collaboration in mind?</p>
 
-                            <img src="assets/ico.png" alt="Contact Image" style="width: 190px; margin-bottom: 20px;" />
+                            <img src="assets/ico.png" alt="Contact Image"
+                                style="width: 190px; margin-bottom: 20px; -webkit-user-drag: none;" />
 
                             <p class="section-subtitle" style="font-size: 10px;">
                                 Email me at:
@@ -179,6 +190,9 @@
                                     jayveemadriaganacino@gmail.com
                                 </span>
                             </p>
+
+                            <audio id="copy-sound" src="assets/sound/mixkit-extra-bonus-in-a-video-game-2045.wav"
+                                preload="auto"></audio>
 
                             <p style="font-size: 10px; color: #555; margin-bottom: 16px; margin-top: -15px;">
                                 Or press the button below to open your email app.
@@ -251,7 +265,7 @@
             const email = document.getElementById("email").value.trim();
             const message = document.getElementById("message").value.trim();
 
-            const mailtoLink = `mailto:jayveemadriaganacino@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${name}%0D%0AEmail: ${email}`;
+            const mailtoLink = `mailto:jayveemadriaganacino@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${name}%0D%0AEmail: ${email}`; //para maka send ng email
 
             window.location.href = mailtoLink;
         }
@@ -293,10 +307,29 @@
         function showCopied() {
             const original = emailSpan.textContent;
             emailSpan.textContent = "Copied!";
+
+            // Play sound
+            const sound = document.getElementById("copy-sound");
+            if (sound) {
+                sound.currentTime = 0;
+                sound.play();
+            }
+
             setTimeout(() => {
                 emailSpan.textContent = original;
             }, 1500);
         }
+
+        const sound = document.getElementById("click-sound");
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                if (sound) {
+                    sound.currentTime = 0;
+                    sound.play();
+                }
+            });
+        });
+
 
 
     </script>
