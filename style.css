@@ -248,10 +248,6 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.profile-nav button:hover {
-    background-color: #f5f8fa;
-}
-
 .profile-nav .active-tab {
     color: #1DA1F2;
     border-bottom: 3px solid #1DA1F2;
@@ -685,4 +681,82 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+}
+
+.theme-btn {
+    position: absolute;
+    top: 8%;
+    right: 200px;
+    z-index: 10;
+}
+
+.theme-btn button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e1e8ed;
+    color: #1a1a1a;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-btn button:hover {
+    background-color: #d0d7de;
+}
+
+body.dark {
+    background-color: #0f1419;
+    color: #e7e9ea;
+}
+
+body.dark .profile-nav,
+body.dark .minimal-card,
+body.dark .coding-item,
+body.dark .twitter-footer {
+    background-color: #16181c;
+    color: #e7e9ea;
+}
+
+body.dark .profile h1,
+body.dark .profile p,
+body.dark .icon-item p,
+body.dark .section-title,
+body.dark .code-title {
+    color: #e7e9ea;
+}
+
+body.dark .code-description,
+body.dark .section-subtitle,
+body.dark .about-intro {
+    color: #9aa0a6;
+}
+
+body.dark i {
+    color: #e7e9ea;
+}
+
+body.dark .art-title {
+    color: #e7e9ea;
+}
+
+body.dark #modalTitle {
+    color: #1f2933;
+}
+
+body.dark .info-list li{
+    color: #9aa0a6;
+}
+
+body.dark .code-title h3{
+    color: #1f2933;
+}
+
+body.dark .theme-btn button {
+    background-color: #1f2933;
+    color: #facc15;
 }
